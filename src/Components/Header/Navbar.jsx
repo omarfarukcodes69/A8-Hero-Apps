@@ -1,6 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import logo from "../../assets/logo.png"
 
 const Navbar = () => {
@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
             <img className="max-w-10 max-h-10" src={logo} alt="Hero.oi logo" />
-            <a className="btn btn-ghost text-xl">Hero.OI</a>
+            <Link to='/' className="btn btn-ghost text-xl">Hero.OI</Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
