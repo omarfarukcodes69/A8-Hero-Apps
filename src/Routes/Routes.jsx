@@ -5,11 +5,14 @@ import RootLayout from "../Layouts/RootLayout";
 import AllApps from "../Pages/AllApps";
 import Installation from "../Pages/Installation";
 
+
+
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
     errorElement: <p>404 Page Not Found</p>,
+    hydrateFallbackElement:<p>Loeading ....</p>,
     children: [
       {
         index: true,

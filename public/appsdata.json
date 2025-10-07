@@ -1,14 +1,14 @@
 [
   {
-    "id": 1,
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
     "title": "WhatsApp",
     "companyName": "Meta Platforms",
-    "description": "Fast, simple, and secure messaging app.",
-    "size": 55,
-    "reviews": "2.5M",
+    "id": 1,
+    "description": "WhatsApp is a free messaging and video calling app used by over 2 billion people worldwide. It offers end-to-end encryption, voice and video calls, and supports multimedia sharing, making it a reliable communication tool.",
+    "size": 129,
+    "reviews": "121.3M",
     "ratingAvg": 4.7,
-    "downloads": "5000M",
+    "downloads": "5B",
     "ratings": [
       { "name": "1 star", "count": 80000 },
       { "name": "2 star", "count": 30000 },
@@ -18,15 +18,15 @@
     ]
   },
   {
-    "id": 2,
     "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Maps_logo.svg",
     "title": "Google Maps",
     "companyName": "Google LLC",
-    "description": "Navigation and real-time traffic updates.",
+    "id": 2,
+    "description": "Google Maps provides real-time GPS navigation, traffic conditions, route planning, and local business information. It's a comprehensive tool for exploring and navigating the world with confidence.",
     "size": 70,
     "reviews": "1.8M",
     "ratingAvg": 4.6,
-    "downloads": "5000M",
+    "downloads": "5B",
     "ratings": [
       { "name": "1 star", "count": 70000 },
       { "name": "2 star", "count": 40000 },
@@ -36,15 +36,15 @@
     ]
   },
   {
-    "id": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Instagram_logo_2022.svg",
     "title": "Instagram",
     "companyName": "Meta Platforms",
-    "description": "Photo & video sharing social media platform.",
+    "id": 3,
+    "description": "Instagram is a photo and video sharing social media platform that allows users to capture, edit, and share content. It offers features like Stories, Reels, and direct messaging.",
     "size": 60,
     "reviews": "2M",
     "ratingAvg": 4.5,
-    "downloads": "4000M",
+    "downloads": "4B",
     "ratings": [
       { "name": "1 star", "count": 60000 },
       { "name": "2 star", "count": 35000 },
@@ -54,35 +54,143 @@
     ]
   },
   {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Facebook_Logo_2023.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
     "id": 4,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Spotify_logo_with_text.svg",
-    "title": "Spotify",
-    "companyName": "Spotify AB",
-    "description": "Stream millions of songs and podcasts.",
-    "size": 90,
-    "reviews": "1.2M",
-    "ratingAvg": 4.6,
-    "downloads": "2000M",
+    "description": "Facebook connects people globally, allowing users to share updates, photos, videos, and communicate via groups, pages, and messenger.",
+    "size": 115,
+    "reviews": "120M",
+    "ratingAvg": 4.4,
+    "downloads": "5B",
     "ratings": [
-      { "name": "1 star", "count": 40000 },
-      { "name": "2 star", "count": 20000 },
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Google_Chrome_icon_%282011%29.png",
+    "title": "Google Chrome",
+    "companyName": "Google LLC",
+    "id": 5,
+    "description": "Google Chrome is a fast, secure, and widely-used web browser that syncs bookmarks, history, and passwords across devices.",
+    "size": 90,
+    "reviews": "9M",
+    "ratingAvg": 4.6,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 30000 },
       { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1200000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/YouTube_Logo_2017.svg",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 6,
+    "description": "YouTube is a global video sharing platform that allows users to watch, upload, and share videos across millions of channels.",
+    "size": 105,
+    "reviews": "150M",
+    "ratingAvg": 4.7,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/TikTok_logo.svg",
+    "title": "TikTok",
+    "companyName": "ByteDance",
+    "id": 7,
+    "description": "TikTok is a short-form video platform where users create, watch, and share fun and creative videos with a global community.",
+    "size": 85,
+    "reviews": "9.5M",
+    "ratingAvg": 4.4,
+    "downloads": "3B",
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 450000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg",
+    "title": "X (Twitter)",
+    "companyName": "X Corp",
+    "id": 8,
+    "description": "X (formerly Twitter) is a social media platform for sharing thoughts, news, and trending topics in real-time with global users.",
+    "size": 65,
+    "reviews": "1.2M",
+    "ratingAvg": 4.3,
+    "downloads": "2B",
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
       { "name": "4 star", "count": 300000 },
       { "name": "5 star", "count": 1000000 }
     ]
   },
   {
-    "id": 5,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png",
-    "title": "Facebook",
-    "companyName": "Meta Platforms",
-    "description": "Connect and share with people.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gmail_icon_%282020%29.svg",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 9,
+    "description": "Gmail is a secure and user-friendly email service with smart inbox features, spam protection, and integration with Google Workspace.",
     "size": 85,
-    "reviews": "2.4M",
-    "ratingAvg": 4.3,
-    "downloads": "5000M",
+    "reviews": "7.5M",
+    "ratingAvg": 4.5,
+    "downloads": "10B",
     "ratings": [
-      { "name": "1 star", "count": 80000 },
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Netflix_2015_logo.svg",
+    "title": "Netflix",
+    "companyName": "Netflix Inc.",
+    "id": 10,
+    "description": "Netflix is a streaming platform offering movies, TV shows, and documentaries worldwide with offline viewing and smart recommendations.",
+    "size": 120,
+    "reviews": "9.2M",
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1200000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Play_Store_badge_EN.svg",
+    "title": "Google Play Store",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Google Play Store is the official app marketplace for Android users to download apps, games, books, and more.",
+    "size": 50,
+    "reviews": "11M",
+    "ratingAvg": 4.6,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
       { "name": "2 star", "count": 40000 },
       { "name": "3 star", "count": 90000 },
       { "name": "4 star", "count": 400000 },
@@ -90,21 +198,165 @@
     ]
   },
   {
-    "id": 6,
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
-    "title": "Amazon",
-    "companyName": "Amazon Inc.",
-    "description": "Online shopping app for millions of products.",
-    "size": 100,
-    "reviews": "1.7M",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Spotify_logo_vertical.svg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 12,
+    "description": "Spotify is a digital music service that gives users access to millions of songs, podcasts, and playlists with personalized recommendations.",
+    "size": 95,
+    "reviews": "8.3M",
     "ratingAvg": 4.5,
-    "downloads": "1000M",
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Snapchat_Logo.svg",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 13,
+    "description": "Snapchat lets users share moments with friends through photos, videos, and chat with filters, Bitmojis, and Discover stories.",
+    "size": 80,
+    "reviews": "5.4M",
+    "ratingAvg": 4.3,
+    "downloads": "1B",
     "ratings": [
       { "name": "1 star", "count": 50000 },
-      { "name": "2 star", "count": 25000 },
-      { "name": "3 star", "count": 100000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 80000 },
       { "name": "4 star", "count": 300000 },
-      { "name": "5 star", "count": 1200000 }
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/LinkedIn_logo_initials.png",
+    "title": "LinkedIn",
+    "companyName": "Microsoft",
+    "id": 14,
+    "description": "LinkedIn is a professional networking platform that helps people connect, find jobs, and share career insights and updates.",
+    "size": 70,
+    "reviews": "3.2M",
+    "ratingAvg": 4.4,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Zoom_Communications_Logo.svg",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 15,
+    "description": "Zoom is a leading video conferencing app for virtual meetings, webinars, and online collaboration with HD audio and video.",
+    "size": 110,
+    "reviews": "2.8M",
+    "ratingAvg": 4.5,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Telegram_logo.svg",
+    "title": "Telegram",
+    "companyName": "Telegram FZ LLC",
+    "id": 16,
+    "description": "Telegram is a fast and secure messaging app with cloud sync, large file sharing, and strong privacy options.",
+    "size": 80,
+    "reviews": "10M",
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 70000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1100000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Drive_logo.png",
+    "title": "Google Drive",
+    "companyName": "Google LLC",
+    "id": 17,
+    "description": "Google Drive allows users to store, share, and collaborate on files and documents securely in the cloud.",
+    "size": 90,
+    "reviews": "6.1M",
+    "ratingAvg": 4.6,
+    "downloads": "10B",
+    "ratings": [
+      { "name": "1 star", "count": 30000 },
+      { "name": "2 star", "count": 15000 },
+      { "name": "3 star", "count": 50000 },
+      { "name": "4 star", "count": 200000 },
+      { "name": "5 star", "count": 800000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Google_Photos_icon_%282020%29.svg",
+    "title": "Google Photos",
+    "companyName": "Google LLC",
+    "id": 18,
+    "description": "Google Photos stores and organizes your photos and videos with AI-based search, editing tools, and cloud backup.",
+    "size": 75,
+    "reviews": "5M",
+    "ratingAvg": 4.5,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 900000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Google_Translate_icon.svg",
+    "title": "Google Translate",
+    "companyName": "Google LLC",
+    "id": 19,
+    "description": "Google Translate translates text, voice, and images in over 100 languages, even offline, making communication easier worldwide.",
+    "size": 60,
+    "reviews": "1.2M",
+    "ratingAvg": 4.6,
+    "downloads": "1B",
+    "ratings": [
+      { "name": "1 star", "count": 20000 },
+      { "name": "2 star", "count": 10000 },
+      { "name": "3 star", "count": 30000 },
+      { "name": "4 star", "count": 100000 },
+      { "name": "5 star", "count": 400000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Google_News_icon.svg",
+    "title": "Google News",
+    "companyName": "Google LLC",
+    "id": 20,
+    "description": "Google News organizes world news and stories from trusted sources, offering personalized headlines and topic-based browsing.",
+    "size": 55,
+    "reviews": "5M",
+    "ratingAvg": 4.5,
+    "downloads": "5B",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 60000 },
+      { "name": "4 star", "count": 250000 },
+      { "name": "5 star", "count": 900000 }
     ]
   }
 ]
