@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg",
+    "title": "WhatsApp",
+    "companyName": "Meta Platforms",
+    "description": "Fast, simple, and secure messaging app.",
+    "size": 55,
+    "reviews": "2.5M",
+    "ratingAvg": 4.7,
+    "downloads": "5000M",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 2000000 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Maps_logo.svg",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "description": "Navigation and real-time traffic updates.",
+    "size": 70,
+    "reviews": "1.8M",
+    "ratingAvg": 4.6,
+    "downloads": "5000M",
+    "ratings": [
+      { "name": "1 star", "count": 70000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 350000 },
+      { "name": "5 star", "count": 1300000 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Instagram_logo_2022.svg",
+    "title": "Instagram",
+    "companyName": "Meta Platforms",
+    "description": "Photo & video sharing social media platform.",
+    "size": 60,
+    "reviews": "2M",
+    "ratingAvg": 4.5,
+    "downloads": "4000M",
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 110000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1400000 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Spotify_logo_with_text.svg",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "description": "Stream millions of songs and podcasts.",
+    "size": 90,
+    "reviews": "1.2M",
+    "ratingAvg": 4.6,
+    "downloads": "2000M",
+    "ratings": [
+      { "name": "1 star", "count": 40000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1000000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png",
+    "title": "Facebook",
+    "companyName": "Meta Platforms",
+    "description": "Connect and share with people.",
+    "size": 85,
+    "reviews": "2.4M",
+    "ratingAvg": 4.3,
+    "downloads": "5000M",
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+    "title": "Amazon",
+    "companyName": "Amazon Inc.",
+    "description": "Online shopping app for millions of products.",
+    "size": 100,
+    "reviews": "1.7M",
+    "ratingAvg": 4.5,
+    "downloads": "1000M",
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 300000 },
+      { "name": "5 star", "count": 1200000 }
+    ]
+  }
+]

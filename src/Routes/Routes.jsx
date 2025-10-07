@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home";
 import RootLayout from "../Layouts/RootLayout";
-import errorPage from "../Pages/errorPage";
+// import errorPage from "../Pages/errorPage";
 import AllApps from "../Pages/AllApps";
 import Installation from "../Pages/Installation";
 
@@ -9,7 +9,7 @@ export const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
-    errorElement: errorPage,
+    errorElement: <p>404 Page Not Found</p>,
     children: [
       {
         index: true,
@@ -18,10 +18,11 @@ export const router = createBrowserRouter([
       {
         path: "/apps",
         Component: AllApps,
-      },{
-        path:'/installation',
-        Component:Installation,
-      }
+      },
+      {
+        path: "/installation",
+        Component: Installation,
+      },
     ],
   },
 ]);
