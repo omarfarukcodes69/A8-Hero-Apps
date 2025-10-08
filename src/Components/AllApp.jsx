@@ -3,17 +3,15 @@ import { FaArrowDown } from "react-icons/fa";
 import { IoStarSharp } from "react-icons/io5";
 import App from "../App";
 
-const AllApp = ({App}) => {
+const AllApp = ({ App }) => {
   const { title, image, downloads, ratingAvg } = App;
-  console.log(App);
+  // console.log(App);
 
   return (
-    <div>
-      <img
-        className="max-h-70 overflow-hidden bg-gray-300 rounded-xl w-full object-fit mx-auto "
-        src={image}
-        alt="logo"
-      />
+    <div className="border border-gray-300 rounded p-4 shadow-lg hover:scale-105 hover:bg-[#723fe8] transition ease-in-out">
+      <div className="bg-gray-300 hover:bg-[#965af0] w-full h-70 overflow-hidden rounded-xl p-10">
+        <img className=" object-fit m-auto rounded-xl " src={image} alt="logo" />
+      </div>
 
       <h1 className="text-xl font-bold py-2">{title}</h1>
       <div className=" flex justify-between items-center ">

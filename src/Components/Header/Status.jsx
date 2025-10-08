@@ -25,8 +25,8 @@ const Status = () => {
           </aside>
         </div>
       </div>
-      <div className="my-20">
-        <h1 className="text-2xl font-bold text-center">Trending Apps</h1>
+      <div className="my-20 space-y-4">
+        <h1 className="text-4xl font-bold text-center">Trending Apps</h1>
         <p className="text-gray-400 text-center">
           Explore All Trending Apps on the Market developed by us
         </p>

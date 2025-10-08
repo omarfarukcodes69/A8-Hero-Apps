@@ -18,7 +18,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Maps_logo.svg",
+    "image": "https://cdn.worldvectorlogo.com/logos/google-maps-2020-icon.svg",
     "title": "Google Maps",
     "companyName": "Google LLC",
     "id": 2,
@@ -36,7 +36,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/15/Instagram_logo_2022.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png?20220518162235",
     "title": "Instagram",
     "companyName": "Meta Platforms",
     "id": 3,
@@ -54,7 +54,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Facebook_Logo_2023.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/900px-2023_Facebook_icon.svg.png?20231011122028",
     "title": "Facebook",
     "companyName": "Meta Platforms",
     "id": 4,
@@ -72,7 +72,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Google_Chrome_icon_%282011%29.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png?20151104231050",
     "title": "Google Chrome",
     "companyName": "Google LLC",
     "id": 5,
@@ -90,7 +90,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/YouTube_Logo_2017.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/768px-YouTube_full-color_icon_%282017%29.svg.png?20240107144800",
     "title": "YouTube",
     "companyName": "Google LLC",
     "id": 6,
@@ -108,7 +108,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/TikTok_logo.svg",
+    "image": "https://www.svgrepo.com/show/473806/tiktok.svg",
     "title": "TikTok",
     "companyName": "ByteDance",
     "id": 7,
@@ -126,7 +126,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Twitter-logo.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-h-e2hgz8mwGfCt4gvj4IgMG_wAUolVM6w&s",
     "title": "X (Twitter)",
     "companyName": "X Corp",
     "id": 8,
@@ -144,7 +144,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Gmail_icon_%282020%29.svg",
+    "image": "https://www.svgrepo.com/show/217146/gmail.svg",
     "title": "Gmail",
     "companyName": "Google LLC",
     "id": 9,
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Netflix_2015_logo.svg",
+    "image": "https://cdn.worldvectorlogo.com/logos/netflix-logo-icon.svg",
     "title": "Netflix",
     "companyName": "Netflix Inc.",
     "id": 10,
@@ -180,7 +180,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/30/Google_Play_Store_badge_EN.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Google_Play_2022_logo.svg/768px-Google_Play_2022_logo.svg.png?20220726170516",
     "title": "Google Play Store",
     "companyName": "Google LLC",
     "id": 11,
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Spotify_logo_vertical.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRslcO84eWfXP_4Ucd4Yfz6B8uqJmHaTo0iTw&s",
     "title": "Spotify",
     "companyName": "Spotify AB",
     "id": 12,
@@ -216,7 +216,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Snapchat_Logo.svg",
+    "image": "https://images.seeklogo.com/logo-png/43/1/snapchat-logo-png_seeklogo-436645.png",
     "title": "Snapchat",
     "companyName": "Snap Inc.",
     "id": 13,
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d7/LinkedIn_logo_initials.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png",
     "title": "LinkedIn",
     "companyName": "Microsoft",
     "id": 14,
@@ -252,7 +252,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Zoom_Communications_Logo.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkfDYQRTgE4nYXtPKZs01vB25YouhpgXobrg&s",
     "title": "Zoom",
     "companyName": "Zoom Video Communications",
     "id": 15,
@@ -270,7 +270,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/69/Telegram_logo.svg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRku8_NMJHPR56xur3VJWN1MA1FbFE9p3wj_g&s",
     "title": "Telegram",
     "companyName": "Telegram FZ LLC",
     "id": 16,
@@ -288,7 +288,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Drive_logo.png",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Drive_icon_%282020%29.svg/2295px-Google_Drive_icon_%282020%29.svg.png",
     "title": "Google Drive",
     "companyName": "Google LLC",
     "id": 17,
@@ -306,7 +306,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Google_Photos_icon_%282020%29.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Google_Photos_icon_%282020%29.svg/1024px-Google_Photos_icon_%282020%29.svg.png",
     "title": "Google Photos",
     "companyName": "Google LLC",
     "id": 18,
@@ -324,7 +324,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Google_Translate_icon.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/2048px-Google_Translate_logo.svg.png",
     "title": "Google Translate",
     "companyName": "Google LLC",
     "id": 19,
@@ -342,7 +342,7 @@
     ]
   },
   {
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Google_News_icon.svg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Google_News_icon.svg/768px-Google_News_icon.svg.png?20210606145828",
     "title": "Google News",
     "companyName": "Google LLC",
     "id": 20,

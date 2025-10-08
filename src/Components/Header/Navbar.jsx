@@ -1,7 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { Link, NavLink } from "react-router";
-import logo from "../../assets/logo.png"
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   return (
@@ -50,8 +50,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center">
-            <img className="max-w-10 max-h-10" src={logo} alt="Hero.oi logo" />
-            <Link to='/' className="btn btn-ghost text-xl">Hero.OI</Link>
+          <img className="max-w-10 max-h-10" src={logo} alt="Hero.oi logo" />
+          <Link to="/" className="btn btn-ghost text-xl">
+            Hero.OI
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -77,7 +79,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-gradient-to-b from-[#723fe8] to-[#965AF0] text-white font-bold"><FaGithub className="text-xl" />Contribute</a>
+        <Link
+          to="https://github.com/omarfarukcodes69"
+          className="btn bg-gradient-to-b from-[#723fe8] to-[#965AF0] hover:bg-gradient-to-t text-white font-semibold"
+        >
+          <FaGithub className="text-xl" />
+          Contribute
+        </Link>
       </div>
     </div>
   );
