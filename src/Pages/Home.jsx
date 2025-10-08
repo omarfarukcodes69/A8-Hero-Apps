@@ -4,7 +4,7 @@ import Status from "../Components/Header/Status";
 import useAppsData from "../Hooks/useAppsData";
 import AppsCard from "../Components/AppsCard";
 import { Link } from "react-router";
-import PageError from "../Components/PageError";
+import CoustomLoader from "../Components/CoustomLoader";
 
 const Home = () => {
   const { AppsData, Loading, Error } = useAppsData();
@@ -15,9 +15,11 @@ const Home = () => {
       <Bannar></Bannar>
       <Status></Status>
       <div className="bg-white max-w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-10 rounded p-4">
-        {Apps.map((App) => (
-          <AppsCard key={App.id} App={App}></AppsCard>
-        ))}
+        {Loading ? (
+          <CoustomLoader />
+        ) : (
+          Apps.map((App) => <AppsCard key={App.id} App={App}></AppsCard>)
+        )}
       </div>
       <div className=" w-full my-15 text-center">
         <Link

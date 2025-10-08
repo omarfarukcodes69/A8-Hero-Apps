@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import CoustomLoader from "../Components/CoustomLoader";
 
 const useAppsData = () => {
     const [AppsData, setAppsData] = useState([]);
     const [Loading, setLoading] = useState(true);
     const [Error, setError] = useState(null);
+
     useEffect(() => {
         setLoading(true)
         axios('../appsdata.json')

@@ -6,23 +6,18 @@ import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
 import PageError from "../Components/PageError";
 import AppErrorPage from "../Components/AppErrorPage";
-import Loading from "../Components/Loading";
+import CoustomLoader from "../Components/CoustomLoader";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
     errorElement: <PageError />,
-    hydrateFallbackElement: <p>Loading ....</p>,
+    hydrateFallbackElement: CoustomLoader,
     children: [
-
       {
-        // index: true,
-        // Component: Home,
-      },
-       {
         index: true,
-        Component: Loading,
+        Component: Home,
       },
       {
         path: "/apps",

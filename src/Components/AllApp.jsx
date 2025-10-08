@@ -5,9 +5,8 @@ import App from "../App";
 import { Link } from "react-router";
 
 const AllApp = ({ App }) => {
-  const { id, title, image, downloads, ratingAvg } = Ap;
+  const { id, title, image, downloads, ratingAvg } = App;
   // console.log(App);
-
   return (
     <Link to={`/apps/${id}`}>
       <div className="border border-gray-300 rounded p-4 shadow-lg hover:scale-105 hover:bg-[#723fe8] transition ease-in-out">

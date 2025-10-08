@@ -51,7 +51,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <img className="max-w-10 max-h-10" src={logo} alt="Hero.oi logo" />
-          <Link to="/" className="btn btn-ghost text-xl">
+          <Link to="/" className="btn btn-ghost text-xl hidden md:block">
             Hero.OI
           </Link>
         </div>
