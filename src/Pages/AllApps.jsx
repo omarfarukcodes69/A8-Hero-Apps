@@ -9,7 +9,7 @@ const AllApps = () => {
   const SearchApps = term
     ? AppsData.filter((App) => App.title.toLocaleLowerCase().includes(term))
     : AppsData;
-  console.log(SearchApps);
+  // console.log(SearchApps);
   //  console.log(AppsData)
   return (
     <>
