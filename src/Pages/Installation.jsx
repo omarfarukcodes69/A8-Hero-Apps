@@ -5,10 +5,20 @@ import InstalledApp from "../Components/InstalledApp";
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
   const [SortType, setSortType] = useState("des");
+    const [toggle, setToggle] = useState(true);
   useEffect(() => {
-    const InstalledData = JSON.parse(localStorage.getItem("InstalledApp"));
+    const InstalledData = JSON.parse(localStorage.getItem("InstalledApp"))||[]
     setInstalledApps(InstalledData);
   }, []);
+
+  const handleUninstall = (id) => {
+    // console.log(id,"uninstalling...")
+    const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
+    const updatedApp = existingApp.filter((app) => app.id !== id);
+    localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
+    setInstalledApps(updatedApp);
+    setToggle(true);
+  };
 
   const handleSort = (type) => {
     setSortType(type);
@@ -62,6 +72,7 @@ const Installation = () => {
         <InstalledApp
           key={installedApp.title}
           installedApp={installedApp}
+          handleUninstall={handleUninstall}
         ></InstalledApp>
       ))}
     </div>

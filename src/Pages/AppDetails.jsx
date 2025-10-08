@@ -4,17 +4,27 @@ import useAppsData from "../Hooks/useAppsData";
 import downloadIcon from "../assets/icon-downloads.png";
 import RatingIcon from "../assets/icon-ratings.png";
 import LikeIcon from "../assets/icon-review.png";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 const AppDetails = () => {
-  const [toggle, setToggle] = useState(true);
   const { AppsData, Loading, Error } = useAppsData();
+  const [toggle, setToggle] = useState(true);
   const { id } = useParams();
   if (Loading) <p>Loading......</p>;
   const App = AppsData?.find((a) => Number(a.id) === Number(id));
   if (!App) return <p>App not found.</p>;
   //   console.Log(toggle);
+  const ratings = App.ratings;
+
   const handleInstall = () => {
-    setToggle(false);
-    console.log("Installing....");
     const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
     let updatedApp = [];
     if (existingApp) {
@@ -25,6 +35,7 @@ const AppDetails = () => {
       updatedApp.push(App);
     }
     localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
+    setToggle(false);
   };
 
   const {
@@ -89,7 +100,31 @@ const AppDetails = () => {
       </section>
       <span className="divider"></span>
 
-      <section className="RattingSection"></section>
+      <section className="RattingSection">
+        <h1 className="text-lg font-bold">Rating</h1>
+        <div className="h-80">
+          <ResponsiveContainer width="100%" height="90%">
+            <BarChart
+              data={ratings}
+              layout="vertical" // 👉 এই লাইনটা যোগ করলেই chart ঘুরে যাবে
+              margin={{ top: 10, right: 30, left: 80, bottom: 5 }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" /> {/* value horizontal axis এ */}
+              <YAxis dataKey="name" type="category" />{" "}
+              {/* star labels vertical axis এ */}
+              <Tooltip />
+              <Legend />
+              <Bar
+                dataKey="count"
+                fill="#60a5fa"
+                barSize={30}
+                radius={[0, 10, 10, 0]}
+              />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+      </section>
       <span className="divider"></span>
 
       <section className="space-y-2 ">
