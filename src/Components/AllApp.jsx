@@ -1,8 +1,9 @@
-import React from "react";
+
 import { FaArrowDown } from "react-icons/fa";
 import { IoStarSharp } from "react-icons/io5";
 import App from "../App";
 import { Link } from "react-router";
+
 
 const AllApp = ({ App }) => {
   const { id, title, image, downloads, ratingAvg } = App;

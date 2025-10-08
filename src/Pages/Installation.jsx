@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import InstalledApp from "../Components/InstalledApp";
+import { toast } from "react-toastify/unstyled";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -18,6 +19,7 @@ const Installation = () => {
     localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
     setInstalledApps(updatedApp);
     setToggle(true);
+    toast("Uninstalling...")
   };
 
   const handleSort = (type) => {
@@ -32,7 +34,7 @@ const Installation = () => {
       return installedApps;
     }
   };
-  console.log(SortType);
+  // console.log(SortType);
   //   console.log(installedApps);
   return (
     <div className="w-[90%] mx-auto my-15">

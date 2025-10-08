@@ -14,30 +14,18 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
+import { toast, ToastContainer } from "react-toastify/unstyled";
+import CoustomLoader from "../Components/CoustomLoader";
+import AppErrorPage from "../Components/AppErrorPage";
 const AppDetails = () => {
   const { AppsData, Loading, Error } = useAppsData();
   const [toggle, setToggle] = useState(true);
   const { id } = useParams();
-  if (Loading) <p>Loading......</p>;
+  if (Loading) <CoustomLoader />;
   const App = AppsData?.find((a) => Number(a.id) === Number(id));
-  if (!App) return <p>App not found.</p>;
+  if (!App) return <AppErrorPage />;
   //   console.Log(toggle);
   const ratings = App.ratings;
-
-  const handleInstall = () => {
-    const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
-    let updatedApp = [];
-    if (existingApp) {
-      const isDuplicate = existingApp.some((a) => a.id === App.id);
-      if (isDuplicate) return alert("This data already installed");
-      updatedApp = [...existingApp, App];
-    } else {
-      updatedApp.push(App);
-    }
-    localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
-    setToggle(false);
-  };
-
   const {
     image,
     title,
@@ -48,6 +36,23 @@ const AppDetails = () => {
     ratingAvg,
     downloads,
   } = App;
+
+  const handleInstall = () => {
+
+    const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
+    let updatedApp = [];
+    if (existingApp) {
+      const isDuplicate = existingApp.some((a) => a.id === App.id);
+      if (isDuplicate) return toast("This data already installed !!!");
+      updatedApp = [...existingApp, App];
+    } else {
+      updatedApp.push(App);
+    }
+    localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
+    setToggle(false);
+    toast("Installing...")
+  };
+
   //   console.log(App);
 
   return (
@@ -94,6 +99,8 @@ const AppDetails = () => {
               toggle ? " text-white" : " bg-gray-400 text-gray-700"
             }`}
           >
+            {" "}
+            <ToastContainer />
             {toggle ? `Install Now ( ${size} MB )` : "Installed"}
           </button>
         </div>

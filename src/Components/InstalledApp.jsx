@@ -28,6 +28,7 @@ const InstalledApp = ({ installedApp, handleUninstall }) => {
         onClick={() => handleUninstall(id)}
         className="btn bg-[#00d390] text-white"
       >
+        <ToastContainer />
         Uninstall
       </button>
     </div>
