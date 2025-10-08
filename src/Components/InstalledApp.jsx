@@ -1,4 +1,5 @@
 import { FaDownload, FaStar } from "react-icons/fa";
+import { ToastContainer } from "react-toastify/unstyled";
 
 const InstalledApp = ({ installedApp, handleUninstall }) => {
   const { title, image, downloads, ratingAvg, size, id } = installedApp;
@@ -28,8 +29,8 @@ const InstalledApp = ({ installedApp, handleUninstall }) => {
         onClick={() => handleUninstall(id)}
         className="btn bg-[#00d390] text-white"
       >
-        <ToastContainer />
-        Uninstall
+        Uninstall<ToastContainer />
+
       </button>
     </div>
   );

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { IoMdArrowDropdownCircle } from "react-icons/io";
 import InstalledApp from "../Components/InstalledApp";
 import { toast } from "react-toastify/unstyled";
+import { ToastContainer } from "react-toastify";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -13,13 +14,15 @@ const Installation = () => {
   }, []);
 
   const handleUninstall = (id) => {
+     toast("Uninstalling...")
     // console.log(id,"uninstalling...")
     const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
     const updatedApp = existingApp.filter((app) => app.id !== id);
     localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
     setInstalledApps(updatedApp);
     setToggle(true);
-    toast("Uninstalling...")
+
+
   };
 
   const handleSort = (type) => {
@@ -76,6 +79,7 @@ const Installation = () => {
           installedApp={installedApp}
           handleUninstall={handleUninstall}
         ></InstalledApp>
+
       ))}
     </div>
   );
