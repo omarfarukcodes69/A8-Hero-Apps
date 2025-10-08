@@ -1,37 +1,48 @@
 import { createBrowserRouter } from "react-router";
 import Home from "../Pages/Home";
 import RootLayout from "../Layouts/RootLayout";
-// import errorPage from "../Pages/errorPage";
 import AllApps from "../Pages/AllApps";
 import Installation from "../Pages/Installation";
 import AppDetails from "../Pages/AppDetails";
+import PageError from "../Components/PageError";
+import AppErrorPage from "../Components/AppErrorPage";
+import Loading from "../Components/Loading";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
-    errorElement: <p>404 Page Not Found</p>,
-    hydrateFallbackElement: <p>Loeading ....</p>,
+    errorElement: <PageError />,
+    hydrateFallbackElement: <p>Loading ....</p>,
     children: [
+
       {
+        // index: true,
+        // Component: Home,
+      },
+       {
         index: true,
-        Component: Home,
+        Component: Loading,
       },
       {
         path: "/apps",
         Component: AllApps,
+        errorElement: <AppErrorPage />,
       },
       {
         path: "/installation",
         Component: Installation,
+        errorElement: <AppErrorPage />,
       },
       {
-        path: '/apps/:id',
+        path: "/apps/:id",
         Component: AppDetails,
+        errorElement: <AppErrorPage />,
       },
       {
-        path: '/installed',
+        path: "/installed",
         Component: Installation,
+        errorElement: <AppErrorPage />,
       },
     ],
   },

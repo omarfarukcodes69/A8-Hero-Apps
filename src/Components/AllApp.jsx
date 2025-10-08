@@ -5,7 +5,7 @@ import App from "../App";
 import { Link } from "react-router";
 
 const AllApp = ({ App }) => {
-  const { id, title, image, downloads, ratingAvg } = App;
+  const { id, title, image, downloads, ratingAvg } = Ap;
   // console.log(App);
 
   return (

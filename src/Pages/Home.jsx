@@ -4,6 +4,7 @@ import Status from "../Components/Header/Status";
 import useAppsData from "../Hooks/useAppsData";
 import AppsCard from "../Components/AppsCard";
 import { Link } from "react-router";
+import PageError from "../Components/PageError";
 
 const Home = () => {
   const { AppsData, Loading, Error } = useAppsData();

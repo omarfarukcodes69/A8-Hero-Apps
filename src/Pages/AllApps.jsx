@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useAppsData from "../Hooks/useAppsData";
 import AllApp from "../Components/AllApp";
+import AppErrorPage from "../Components/AppErrorPage";
 
 const AllApps = () => {
   const { AppsData, Loading, Error } = useAppsData();
@@ -9,6 +10,7 @@ const AllApps = () => {
   const SearchApps = term
     ? AppsData.filter((App) => App.title.toLocaleLowerCase().includes(term))
     : AppsData;
+
   // console.log(SearchApps);
   //  console.log(AppsData)
   return (
