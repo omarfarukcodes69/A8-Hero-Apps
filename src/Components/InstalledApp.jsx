@@ -4,7 +4,7 @@ import { FaDownload, FaStar } from "react-icons/fa";
 const InstalledApp = ({ installedApp }) => {
   const { title, image, downloads, ratingAvg, size } = installedApp;
   return (
-    <div className=" bg-white border border-gray-300 shadow-lg rounded-xl flex justify-between items-center my-5 px-5 py-3 ">
+    <div className=" bg-white border border-gray-300 shadow-lg rounded-xl flex flex-col md:flex-row justify-between items-center my-5 px-5 py-3 gap-4 ">
       <aside className="flex items-center gap-5">
         <figure className="w-20 h-20 overflow-hidden bg-gray-500 rounded-lg p-2 ">
           <img src={image} alt="" />

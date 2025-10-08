@@ -4,11 +4,26 @@ import InstalledApp from "../Components/InstalledApp";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
+  const [SortType, setSortType] = useState("des");
   useEffect(() => {
     const InstalledData = JSON.parse(localStorage.getItem("InstalledApp"));
     setInstalledApps(InstalledData);
   }, []);
-  console.log(installedApps);
+
+  const handleSort = (type) => {
+    setSortType(type);
+    if (type === "decs") {
+      const SortByDecs = [...installedApps].sort((a, b) => b.size - a.size);
+      setInstalledApps(SortByDecs);
+    } else if (type === "acs") {
+      const SortByAcs = [...installedApps].sort((a, b) => a.size - b.size);
+      setInstalledApps(SortByAcs);
+    } else {
+      return installedApps;
+    }
+  };
+  console.log(SortType);
+  //   console.log(installedApps);
   return (
     <div className="w-[90%] mx-auto my-15">
       <div className=" space-y-3 text-center">
@@ -18,7 +33,10 @@ const Installation = () => {
         </p>
       </div>
       <div className="flex justify-between items-center">
-        <h1 className="text-lg font-bold">Apps Found</h1>
+        <h1 className="text-lg font-bold">
+          {" "}
+          ({installedApps.length}) Apps Found
+        </h1>
         <div className="dropdown dropdown-start">
           <div
             tabIndex={0}
@@ -32,17 +50,20 @@ const Installation = () => {
             className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
           >
             <li>
-              <a>Size</a>
+              <a onClick={() => handleSort("decs")}>High-Low</a>
             </li>
             <li>
-              <a>Star</a>
+              <a onClick={() => handleSort("acs")}>Low-High</a>
             </li>
           </ul>
         </div>
       </div>
-      {
-        installedApps.map(installedApp=><InstalledApp key={installedApp.title} installedApp={installedApp}></InstalledApp>)
-      }
+      {installedApps.map((installedApp) => (
+        <InstalledApp
+          key={installedApp.title}
+          installedApp={installedApp}
+        ></InstalledApp>
+      ))}
     </div>
   );
 };
