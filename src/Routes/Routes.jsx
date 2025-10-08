@@ -29,6 +29,10 @@ export const router = createBrowserRouter([
         path: '/apps/:id',
         Component: AppDetails,
       },
+      {
+        path: '/installed',
+        Component: Installation,
+      },
     ],
   },
 ]);
