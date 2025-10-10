@@ -55,13 +55,15 @@ const AllApps = () => {
         </div>
       </div>
       {/* ------ cards ------ */}
-      <div className="bg-white max-w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-5 rounded p-4 mb-20 ">
-        {Loading ? (
-          <CoustomLoader />
-        ) : (
-          SearchApps.map((App) => <AllApp key={App.id} App={App} />)
-        )}
-      </div>
+      {SearchApps.length === 0 ? (<h1 className="text-4xl font-bold text-center py-10 ">Not Found This App</h1>) : (
+        <div className="bg-white max-w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-5 rounded p-4 mb-20 ">
+          {Loading ? (
+            <CoustomLoader />
+          ) : (
+            SearchApps.map((App) => <AllApp key={App.id} App={App} />)
+          )}
+        </div>
+      )}
     </>
   );
 };

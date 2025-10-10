@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import useAppsData from "../Hooks/useAppsData";
 import downloadIcon from "../assets/icon-downloads.png";
@@ -14,16 +14,18 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { toast, ToastContainer } from "react-toastify/unstyled";
+import { toast } from "react-toastify";
 import CoustomLoader from "../Components/CoustomLoader";
 import AppErrorPage from "../Components/AppErrorPage";
 const AppDetails = () => {
   const { AppsData, Loading, Error } = useAppsData();
   const [toggle, setToggle] = useState(true);
+  console.log(toggle);
   const { id } = useParams();
   if (Loading) <CoustomLoader />;
   const App = AppsData?.find((a) => Number(a.id) === Number(id));
   if (!App) return <AppErrorPage />;
+
   //   console.Log(toggle);
   const ratings = App.ratings;
   const {
@@ -38,7 +40,7 @@ const AppDetails = () => {
   } = App;
 
   const handleInstall = () => {
-
+    setToggle(false);
     const existingApp = JSON.parse(localStorage.getItem("InstalledApp"));
     let updatedApp = [];
     if (existingApp) {
@@ -49,8 +51,8 @@ const AppDetails = () => {
       updatedApp.push(App);
     }
     localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
-    setToggle(false);
-    toast("Installing...")
+    // setToggle(false);
+    toast("Installing...");
   };
 
   //   console.log(App);
@@ -99,8 +101,6 @@ const AppDetails = () => {
               toggle ? " text-white" : " bg-gray-400 text-gray-700"
             }`}
           >
-            {" "}
-            <ToastContainer />
             {toggle ? `Install Now ( ${size} MB )` : "Installed"}
           </button>
         </div>

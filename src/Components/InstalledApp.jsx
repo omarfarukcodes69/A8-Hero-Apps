@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
-import { ToastContainer } from "react-toastify/unstyled";
 
 const InstalledApp = ({ installedApp, handleUninstall }) => {
   const { title, image, downloads, ratingAvg, size, id } = installedApp;
+  const [toggle, setToggle] = useState(true);
+  const [installedApps, setInstalledApps] = useState([]);
   return (
     <div className=" bg-white border border-gray-300 shadow-lg rounded-xl flex flex-col md:flex-row justify-between items-center my-5 px-5 py-3 gap-4 ">
       <aside className="flex items-center gap-5">
@@ -29,8 +31,7 @@ const InstalledApp = ({ installedApp, handleUninstall }) => {
         onClick={() => handleUninstall(id)}
         className="btn bg-[#00d390] text-white"
       >
-        Uninstall<ToastContainer />
-
+        Uninstall
       </button>
     </div>
   );
