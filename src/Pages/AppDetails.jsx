@@ -20,8 +20,18 @@ import AppErrorPage from "../Components/AppErrorPage";
 const AppDetails = () => {
   const { AppsData, Loading, Error } = useAppsData();
   const [toggle, setToggle] = useState(true);
-  console.log(toggle);
   const { id } = useParams();
+  useEffect(() => {
+    const InstalledData = JSON.parse(localStorage.getItem("InstalledApp"));
+    const isInstalled = InstalledData.some(
+      (app) => Number(app.id) === Number(id)
+    );
+    setToggle(!isInstalled);
+    // console.log(isInstalled);
+    // console.log(installedApp.id);
+  }, [id]);
+  // console.log(toggle);
+
   if (Loading) <CoustomLoader />;
   const App = AppsData?.find((a) => Number(a.id) === Number(id));
   if (!App) return <AppErrorPage />;
@@ -50,8 +60,12 @@ const AppDetails = () => {
     } else {
       updatedApp.push(App);
     }
+    if (existingApp.id == id) {
+      setToggle(true);
+    }
     localStorage.setItem("InstalledApp", JSON.stringify(updatedApp));
     // setToggle(false);
+
     toast("Installing...");
   };
 
