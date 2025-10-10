@@ -60,19 +60,31 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 space-x-6 ">
           <NavLink
             to="/"
-            className={`hover:border-2 hover:border-[#5e24c3] hover:rounded-xl hover:px-3 hover:py-1 transform  ease-in-out`}
+            className={({ isActive }) =>
+              isActive
+                ? "text-white font-semibold border-2 border-blue-900 bg-[#7e4ad8] rounded-xl p-1"
+                : "text-gray-500 hover:text-white hover:bg-[#7e4ad8] p-1 rounded-xl transform ease-in-out"
+            }
           >
             Home
           </NavLink>
           <NavLink
             to="/apps"
-            className={`hover:border-2 hover:border-[#5e24c3] hover:rounded-xl hover:px-3 hover:py-1 transform  ease-in-out`}
+            className={({ isActive }) =>
+              isActive
+                ? "text-white font-semibold border-2 border-blue-900 bg-[#7e4ad8] rounded-xl p-1"
+                : "text-gray-500 hover:text-white hover:bg-[#7e4ad8] p-1 rounded-xl transform ease-in-out"
+            }
           >
             Apps
           </NavLink>
           <NavLink
             to="/installation"
-            className={`hover:border-2 hover:border-[#5e24c3] hover:rounded-xl hover:px-3 hover:py-1 transform  ease-in-out`}
+            className={({ isActive }) =>
+              isActive
+                ? "text-white font-semibold border-2 border-blue-900 bg-[#7e4ad8] rounded-xl p-1"
+                : "text-gray-500 hover:text-white hover:bg-[#7e4ad8] p-1 rounded-xl transform ease-in-out"
+            }
           >
             Installation
           </NavLink>
